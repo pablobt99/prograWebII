@@ -24,7 +24,7 @@ const HomePage = () => {
     //}
 
     return(
-        <div>
+        <div className="flex">
             <p>You Are logged in to the home page</p>
 
             

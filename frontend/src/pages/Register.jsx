@@ -4,7 +4,7 @@ import AuthContext from "../context/AuthContext";
 const Register = () => {
     let {registerUser} = useContext(AuthContext)
     return(
-        <div>
+        <div className="flex">
             <form onSubmit={registerUser}>
                 <input type="text" name="username" placeholder="Enter username"></input>
                 <input type="password" name="password" placeholder="Enter password"></input>
