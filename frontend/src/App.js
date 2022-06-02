@@ -15,6 +15,7 @@ function App() {
       <Header/>
       <Routes>
         <Route element={<PtivateRoute />} path="/" exact/>
+        <Route element={<HomePage />} path="/home"/>
         <Route element={<LoginPage />} path="/login"/>
       </Routes>
       </AuthProvider>

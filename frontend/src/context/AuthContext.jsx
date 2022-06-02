@@ -29,7 +29,7 @@ export const AuthProvider = ({children}) => {
             setAuthTokens(data)
             setUser(jwt_decode(data.access))
             localStorage.setItem('authTokens', JSON.stringify(data))
-            change('/login')
+            change('/home')
         }else{
             alert('Algo Fue mal');
         }
