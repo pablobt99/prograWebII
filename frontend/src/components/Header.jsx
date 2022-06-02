@@ -13,8 +13,12 @@ const Header = () => {
             )
             : 
             <Link to="/login">Login</Link>}
-            <span> | </span> 
-            <Link to="/register">Register</Link>
+            
+            {user ? (
+            <span></span>
+            )
+            : 
+            <span> | <Link to="/register"> Register</Link></span>}
             
             {user && <p>Hello {user.username}</p>}
             
